@@ -1,82 +1,156 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center_horizontal"
-    android:background="@android:color/white"
-    tools:context=".MainActivity">
+    android:padding="16dp">
 
     <TextView
-        android:id="@+id/title"
+        android:id="@+id/titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
         android:text="Inquilinos"
         android:textSize="24sp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        android:gravity="center"
-        android:fontFamily="sans-serif"
-        android:textColor="@android:color/black"/>
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true" />
 
     <GridLayout
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:rowCount="3"
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titulo"
+        android:layout_marginBottom="16dp"
         android:columnCount="2"
-        android:alignmentMode="alignMargins"
-        android:layout_margin="16dp"
-        android:padding="16dp"
-        android:gravity="center">
+        android:rowCount="3"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true">
 
-        <FrameLayout
+        <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_rowWeight="1"
+            android:layout_margin="8dp"
             android:layout_columnWeight="1"
-            android:layout_margin="8dp">
+            android:background="@drawable/rounded_background"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp">
 
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/tenant_icon_background"
-                android:scaleType="centerCrop" />
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/icono_usuario" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Inquilino 6"
+                android:text="Inquilino 1"
                 android:textColor="@android:color/white"
-                android:textSize="18sp"
-                android:drawableTop="@drawable/tenant_icon"
-                android:gravity="center" />
+                android:paddingTop="8dp"/>
+        </LinearLayout>
 
-        </FrameLayout>
+        <!-- Repite lo mismo para los otros cuatro recuadros -->
 
-        <!-- Repeat the FrameLayout for other tenants -->
-        <!-- ... -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_columnWeight="1"
+            android:background="@drawable/rounded_background"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/icono_usuario" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inquilino 2"
+                android:textColor="@android:color/white"
+                android:paddingTop="8dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_columnWeight="1"
+            android:background="@drawable/rounded_background"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/icono_usuario" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inquilino 3"
+                android:textColor="@android:color/white"
+                android:paddingTop="8dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_columnWeight="1"
+            android:background="@drawable/rounded_background"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/icono_usuario" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inquilino 4"
+                android:textColor="@android:color/white"
+                android:paddingTop="8dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_columnWeight="1"
+            android:background="@drawable/rounded_background"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/icono_usuario" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inquilino 5"
+                android:textColor="@android:color/white"
+                android:paddingTop="8dp"/>
+        </LinearLayout>
 
     </GridLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <ImageView
+        android:id="@+id/agregar"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:padding="16dp">
-
-        <ImageButton
-            android:id="@+id/add_button"
-            android:layout_width="56dp"
-            android:layout_height="56dp"
-            android:background="@drawable/add_button_background"
-            android:src="@drawable/ic_add"
-            android:contentDescription="Add Tenant"
-            android:tint="@android:color/white"/>
-
-    </LinearLayout>
-
-</LinearLayout>
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:src="@drawable/icono_agregar"
+        android:background="@drawable/rounded_background"/>
+</RelativeLayout>

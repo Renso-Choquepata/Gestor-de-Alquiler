@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/icono_persona"
+        />
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="inicio de sesión"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:id="@+id/label_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuario"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="32dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_border"
+        android:padding="12dp">
+
+
+        <ImageView
+            android:id="@+id/icono_usuario"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/icono_persona"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/label_contrasena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contraseña"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="50dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_border"
+        android:padding="12dp">
+
+
+        <ImageView
+            android:id="@+id/icono_contrasena"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/icono_lock"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/btn_iniciar_sesion"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="iniciar sesión"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_background"
+        android:layout_marginTop="70dp"/>
+
+    <TextView
+        android:id="@+id/enlace_registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿no tienes cuenta? Registrate"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"/>
+</LinearLayout>

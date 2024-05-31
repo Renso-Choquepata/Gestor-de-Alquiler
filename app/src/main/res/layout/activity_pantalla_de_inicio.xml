@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginVertical="300dp"
+    >
 
     <ImageView
 
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/icono_pprincipal"
-        tools:layout_editor_absoluteX="154dp"
-        tools:layout_editor_absoluteY="286dp" />
+        />
 
     <EditText
 
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@null"
         android:fontFamily="@font/inter_semibold"
@@ -23,7 +24,7 @@
         android:text="GitAlquiler"
         android:textSize="40sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="121dp"
-        tools:layout_editor_absoluteY="442dp" />
+        android:gravity="center_horizontal"
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
